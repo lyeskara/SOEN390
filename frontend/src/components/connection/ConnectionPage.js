@@ -1,12 +1,6 @@
 import { collection, doc, getDoc, updateDoc } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { auth, db } from "../../firebase";
-import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
-import node from ".././../images/clarity_node.png";
-import group from ".././../images/group.png";
-import event from ".././../images/event.png";
-import trash from ".././../images/trash.png";
-import arrow from ".././../images/mdi_arrow.png";
 import "../../styles/network.css";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -106,7 +100,6 @@ function ConnectionPage() {
               <div className="containRequest">
                 <h5>My Connections</h5>
 
-                {/* Show the connections */}
               </div>
               <br></br>
               <hr></hr>
@@ -132,42 +125,6 @@ function ConnectionPage() {
                 </div>
               </Row>
             </Card>
-
-            {/*If we add the Suggested Connection Feature */}
-
-            {/*<Card>
-              <h5>People you may know</h5>
-              <Row className="mt-3">
-                <Col className="connectCard">
-                  <center>
-                    <h5>First</h5>
-
-                    <Button className="connectButton">Connect</Button>
-                  </center>
-                </Col>
-                <Col className="connectCard">
-                  {" "}
-                  <center>
-                    <h5>Second</h5>
-                    <Button className="connectButton">Connect</Button>
-                  </center>
-                </Col>
-                <Col className="connectCard">
-                  {" "}
-                  <center>
-                    <h5>Third</h5>
-                    <Button className="connectButton">Connect</Button>
-                  </center>
-                </Col>
-                <Col className="connectCard">
-                  {" "}
-                  <center>
-                    <h5>Fourth</h5>
-                    <Button className="connectButton">Connect</Button>
-                  </center>
-                </Col>
-              </Row>
-            </Card>*/}
           </Col>
         </Row>
       </div>

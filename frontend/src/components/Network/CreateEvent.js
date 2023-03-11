@@ -7,10 +7,10 @@ import { Link, useNavigate } from "react-router-dom";
 import { useUserAuth } from "../../context/UserAuthContext.js";
 import { auth, db } from "../../firebase.js";
 import "bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "react-datepicker/dist/react-datepicker.css";
-import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
-import backward from ".././../images/backward.png";
+//import "bootstrap/dist/css/bootstrap.min.css";
+//import "react-datepicker/dist/react-datepicker.css";
+//import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
+//import backward from ".././../images/backward.png";
 import "../../styles/network.css";
 
 import firebase from "firebase/app";

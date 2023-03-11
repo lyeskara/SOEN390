@@ -11,13 +11,13 @@ import { useNavigate , Link} from 'react-router-dom';
 import { getDoc,doc, collection, setDoc } from 'firebase/firestore';
 import { db,auth } from '../../firebase';
 import '../../styles/feed.css';
-import Post from './Post';
-import photo from '../../images/photo.png';
-import video from '../../images/video.png';
-import profile1 from '../../images/profile1.png';
-import post1 from '../../images/post1.png';
-import eventicon from '../../images/eventicon.png';
-import personicon from '../../images/personicon.png';
+//import Post from './Post';
+//import photo from '../../images/photo.png';
+//import video from '../../images/video.png';
+//import profile1 from '../../images/profile1.png';
+//import post1 from '../../images/post1.png';
+//import eventicon from '../../images/eventicon.png';
+//import personicon from '../../images/personicon.png';
 
 
 

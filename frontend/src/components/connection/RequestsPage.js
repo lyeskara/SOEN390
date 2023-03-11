@@ -11,8 +11,8 @@ import {
   updateDoc,
 } from "firebase/firestore";
 import { useEffect, useState } from "react";
-import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
-import backward from ".././../images/backward.png";
+//import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
+//import backward from ".././../images/backward.png";
 import "../../styles/network.css";
 import { Link, useNavigate } from "react-router-dom";
 function RequestsPage() {
@@ -141,7 +141,7 @@ function RequestsPage() {
       });
     });
   }, []);
-
+/** 
   function handleWithdraw(userId) {
     getDoc(doc(dbRef, currentId)).then((user) => {
       if (user.exists()) {
@@ -155,7 +155,8 @@ function RequestsPage() {
       }
     });
     Setrequests(requests.filter((element) => element.id !== userId));
-  }
+  } */
+  
   return (
     <>
       <div className="contain">

@@ -20,10 +20,10 @@ import { setDoc, collection,doc, getDocs, getDoc, updateDoc, query } from "fireb
 import { db,auth } from "../../firebase";
 import { useNavigate } from "react-router-dom";
 import '../../styles/createpost.css';
-import photo from '../../images/photo.png';
-import video from '../../images/video.png';
-import eventicon from '../../images/eventicon.png';
-import profilephoto from '../../images/profilephoto.png';
+//import photo from '../../images/photo.png';
+//import video from '../../images/video.png';
+//import eventicon from '../../images/eventicon.png';
+//import profilephoto from '../../images/profilephoto.png';
 import {
   ref,
   uploadBytes,

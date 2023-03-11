@@ -3,9 +3,9 @@ import { Link, useNavigate } from "react-router-dom";
 import { useUserAuth } from "../../context/UserAuthContext.js";
 import { auth } from "../../firebase.js";
 import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
-import node from ".././../images/node_gray.png";
-import group from ".././../images/group_color.png";
-import event from ".././../images/event.png";
+//import node from ".././../images/node_gray.png";
+//import group from ".././../images/group_color.png";
+//import event from ".././../images/event.png";
 
 import "../../styles/network.css";
 

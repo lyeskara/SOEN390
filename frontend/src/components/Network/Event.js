@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useUserAuth } from "../../context/UserAuthContext.js";
 import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
-import node from ".././../images/node_gray.png";
-import group from ".././../images/group.png";
-import event from ".././../images/event_color.png";
+//import node from ".././../images/node_gray.png";
+//import group from ".././../images/group.png";
+//import event from ".././../images/event_color.png";
 import "../../styles/network.css";
 import { auth, db } from "../../firebase";
 import {

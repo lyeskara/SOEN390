@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="21" failures="13" errors="0" time="23.641">
-  <testsuite name="undefined" errors="0" failures="2" skipped="0" timestamp="2023-03-10T22:59:24" time="10.018" tests="3">
-    <testcase classname=" use jsdom in this test file" name=" use jsdom in this test file" time="0.011">
+<testsuites name="jest tests" tests="53" failures="38" errors="0" time="37.622">
+  <testsuite name="undefined" errors="0" failures="1" skipped="0" timestamp="2023-03-11T07:06:55" time="12.374" tests="2">
+    <testcase classname=" use jsdom in this test file" name=" use jsdom in this test file" time="0.008">
     </testcase>
-    <testcase classname="CreatPost component should render the form and create a new post" name="CreatPost component should render the form and create a new post" time="0.237">
-      <failure>FirebaseError: Expected first argument to collection() to be a CollectionReference, a DocumentReference or FirebaseFirestore</failure>
-    </testcase>
-    <testcase classname="CreatPost component should redirect to login page if user is not authenticated" name="CreatPost component should redirect to login page if user is not authenticated" time="0.051">
-      <failure>FirebaseError: Expected first argument to collection() to be a CollectionReference, a DocumentReference or FirebaseFirestore</failure>
-    </testcase>
-  </testsuite>
-  <testsuite name="undefined" errors="0" failures="1" skipped="0" timestamp="2023-03-10T22:59:24" time="10.316" tests="2">
-    <testcase classname=" use jsdom in this test file" name=" use jsdom in this test file" time="0.022">
-    </testcase>
-    <testcase classname="Search should render a search input and a list of search results" name="Search should render a search input and a list of search results" time="0.74">
-      <failure>Error: useNavigate() may be used only in the context of a &lt;Router&gt; component.
-    at Object.invariant (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@remix-run\router\history.ts:480:11)
-    at useNavigate (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-router\lib\hooks.tsx:159:3)
-    at Search (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\connection\Search.js:22:32)
+    <testcase classname=" clicking the sign in button calls the login function with the entered email and password" name=" clicking the sign in button calls the login function with the entered email and password" time="0.273">
+      <failure>TypeError: Cannot destructure property &apos;Login&apos; of &apos;(0 , _UserAuthContext.useUserAuth)(...)&apos; as it is undefined.
+    at SignIn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\authentication\SignIn.js:11:10)
     at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
     at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
     at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
@@ -32,7 +20,109 @@
     at C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\act-compat.js:63:25
     at renderRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:159:26)
     at render (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:246:10)
-    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\connection\Search.test.js:28:11)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\authentication\SignIn.test.js:28:47)
+    at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:66:9)
+    at run (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:475:34)
+    at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="3" skipped="0" timestamp="2023-03-11T07:06:55" time="12.742" tests="4">
+    <testcase classname=" use jsdom in this test file" name=" use jsdom in this test file" time="0.009">
+    </testcase>
+    <testcase classname="GroupNetwork renders &quot;My Groups&quot; section" name="GroupNetwork renders &quot;My Groups&quot; section" time="0.291">
+      <failure>ReferenceError: node is not defined
+    at GroupNetwork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\Network\GroupNetwork.js:23:27)
+    at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
+    at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
+    at beginWork$1 (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:27426:14)
+    at performUnitOfWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+    at workLoopSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+    at renderRootSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25750:22)
+    at flushActQueue (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2667:24)
+    at act (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2582:11)
+    at C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\act-compat.js:63:25
+    at renderRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:159:26)
+    at render (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:246:10)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\Network\GroupNetwork.test.js:16:35)
+    at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:66:9)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:60:9)
+    at run (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:475:34)
+    at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="GroupNetwork renders &quot;Groups You May Like&quot; section" name="GroupNetwork renders &quot;Groups You May Like&quot; section" time="0.02">
+      <failure>ReferenceError: node is not defined
+    at GroupNetwork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\Network\GroupNetwork.js:23:27)
+    at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
+    at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
+    at beginWork$1 (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:27426:14)
+    at performUnitOfWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+    at workLoopSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+    at renderRootSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25750:22)
+    at flushActQueue (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2667:24)
+    at act (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2582:11)
+    at C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\act-compat.js:63:25
+    at renderRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:159:26)
+    at render (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:246:10)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\Network\GroupNetwork.test.js:21:35)
+    at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:66:9)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:60:9)
+    at run (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:475:34)
+    at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="GroupNetwork renders &quot;Create New Group&quot; button" name="GroupNetwork renders &quot;Create New Group&quot; button" time="0.04">
+      <failure>ReferenceError: node is not defined
+    at GroupNetwork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\Network\GroupNetwork.js:23:27)
+    at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
+    at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
+    at beginWork$1 (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:27426:14)
+    at performUnitOfWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+    at workLoopSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+    at renderRootSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25750:22)
+    at flushActQueue (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2667:24)
+    at act (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2582:11)
+    at C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\act-compat.js:63:25
+    at renderRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:159:26)
+    at render (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:246:10)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\Network\GroupNetwork.test.js:26:35)
     at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
@@ -49,8 +139,8 @@
     at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
     </testcase>
   </testsuite>
-  <testsuite name="EditProfile" errors="0" failures="3" skipped="0" timestamp="2023-03-10T22:59:24" time="11.411" tests="3">
-    <testcase classname="EditProfile renders Edit button" name="EditProfile renders Edit button" time="0.676">
+  <testsuite name="EditProfile" errors="0" failures="3" skipped="0" timestamp="2023-03-11T07:06:56" time="12.39" tests="3">
+    <testcase classname="EditProfile renders Edit button" name="EditProfile renders Edit button" time="0.698">
       <failure>Error: useNavigate() may be used only in the context of a &lt;Router&gt; component.
     at Object.invariant (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@remix-run\router\history.ts:480:11)
     at useNavigate (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-router\lib\hooks.tsx:159:3)
@@ -85,7 +175,7 @@
     at runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:475:34)
     at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
     </testcase>
-    <testcase classname="EditProfile opens modal when Edit button is clicked" name="EditProfile opens modal when Edit button is clicked" time="0.031">
+    <testcase classname="EditProfile opens modal when Edit button is clicked" name="EditProfile opens modal when Edit button is clicked" time="0.019">
       <failure>Error: useNavigate() may be used only in the context of a &lt;Router&gt; component.
     at Object.invariant (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@remix-run\router\history.ts:480:11)
     at useNavigate (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-router\lib\hooks.tsx:159:3)
@@ -120,7 +210,7 @@
     at runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:475:34)
     at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
     </testcase>
-    <testcase classname="EditProfile allows user to update profile information" name="EditProfile allows user to update profile information" time="0.021">
+    <testcase classname="EditProfile allows user to update profile information" name="EditProfile allows user to update profile information" time="0.073">
       <failure>Error: useNavigate() may be used only in the context of a &lt;Router&gt; component.
     at Object.invariant (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@remix-run\router\history.ts:480:11)
     at useNavigate (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-router\lib\hooks.tsx:159:3)
@@ -156,10 +246,80 @@
     at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
     </testcase>
   </testsuite>
-  <testsuite name="undefined" errors="0" failures="2" skipped="0" timestamp="2023-03-10T22:59:24" time="13.689" tests="3">
-    <testcase classname=" use jsdom in this test file" name=" use jsdom in this test file" time="0.017">
+  <testsuite name="undefined" errors="0" failures="2" skipped="0" timestamp="2023-03-11T07:06:55" time="13.126" tests="3">
+    <testcase classname=" use jsdom in this test file" name=" use jsdom in this test file" time="0.011">
     </testcase>
-    <testcase classname="JoinNow component renders the form" name="JoinNow component renders the form" time="0.367">
+    <testcase classname="Event component renders without crashing" name="Event component renders without crashing" time="0.324">
+      <failure>ReferenceError: node is not defined
+    at Event (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\Network\Event.js:43:27)
+    at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
+    at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
+    at beginWork$1 (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:27426:14)
+    at performUnitOfWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+    at workLoopSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+    at renderRootSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25750:22)
+    at flushActQueue (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2667:24)
+    at act (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2582:11)
+    at C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\act-compat.js:63:25
+    at renderRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:159:26)
+    at render (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:246:10)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\Network\Event.test.js:16:13)
+    at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:66:9)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:60:9)
+    at run (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:475:34)
+    at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="Event component displays the &quot;Create New Event&quot; button" name="Event component displays the &quot;Create New Event&quot; button" time="0.023">
+      <failure>ReferenceError: node is not defined
+    at Event (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\Network\Event.js:43:27)
+    at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
+    at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
+    at beginWork$1 (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:27426:14)
+    at performUnitOfWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+    at workLoopSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+    at renderRootSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25750:22)
+    at flushActQueue (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2667:24)
+    at act (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2582:11)
+    at C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\act-compat.js:63:25
+    at renderRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:159:26)
+    at render (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:246:10)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\Network\Event.test.js:20:35)
+    at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:66:9)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:60:9)
+    at run (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:475:34)
+    at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="2" skipped="0" timestamp="2023-03-11T07:06:56" time="12.897" tests="3">
+    <testcase classname=" use jsdom in this test file" name=" use jsdom in this test file" time="0.019">
+    </testcase>
+    <testcase classname="JoinNow component renders the form" name="JoinNow component renders the form" time="0.417">
       <failure>TypeError: Cannot destructure property &apos;Registration&apos; of &apos;(0 , _UserAuthContext.useUserAuth)(...)&apos; as it is undefined.
     at JoinNow (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\authentication\JoinNow.js:13:10)
     at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
@@ -192,7 +352,7 @@
     at runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:475:34)
     at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
     </testcase>
-    <testcase classname="JoinNow component registers a new user when the form is submitted" name="JoinNow component registers a new user when the form is submitted" time="0.024">
+    <testcase classname="JoinNow component registers a new user when the form is submitted" name="JoinNow component registers a new user when the form is submitted" time="0.021">
       <failure>TypeError: Cannot destructure property &apos;Registration&apos; of &apos;(0 , _UserAuthContext.useUserAuth)(...)&apos; as it is undefined.
     at JoinNow (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\authentication\JoinNow.js:13:10)
     at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
@@ -226,46 +386,10 @@
     at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
     </testcase>
   </testsuite>
-  <testsuite name="undefined" errors="0" failures="1" skipped="0" timestamp="2023-03-10T22:59:24" time="13.881" tests="2">
-    <testcase classname=" use jsdom in this test file" name=" use jsdom in this test file" time="0.008">
+  <testsuite name="undefined" errors="0" failures="1" skipped="0" timestamp="2023-03-11T07:06:56" time="13.219" tests="2">
+    <testcase classname=" use jsdom in this test file" name=" use jsdom in this test file" time="0.011">
     </testcase>
-    <testcase classname=" clicking the sign in button calls the login function with the entered email and password" name=" clicking the sign in button calls the login function with the entered email and password" time="0.453">
-      <failure>TypeError: Cannot destructure property &apos;Login&apos; of &apos;(0 , _UserAuthContext.useUserAuth)(...)&apos; as it is undefined.
-    at SignIn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\authentication\SignIn.js:11:10)
-    at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
-    at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
-    at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
-    at beginWork$1 (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:27426:14)
-    at performUnitOfWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
-    at workLoopSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
-    at renderRootSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
-    at recoverFromConcurrentError (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25850:20)
-    at performConcurrentWorkOnRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25750:22)
-    at flushActQueue (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2667:24)
-    at act (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2582:11)
-    at C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\act-compat.js:63:25
-    at renderRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:159:26)
-    at render (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:246:10)
-    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\authentication\SignIn.test.js:28:47)
-    at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
-    at new Promise (&lt;anonymous&gt;)
-    at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
-    at _callCircusTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:218:40)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at _runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:155:3)
-    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:66:9)
-    at run (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:25:3)
-    at runAndTransformResultsToJestFormat (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
-    at jestAdapter (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
-    at runTestInternal (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:389:16)
-    at runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:475:34)
-    at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
-    </testcase>
-  </testsuite>
-  <testsuite name="undefined" errors="0" failures="1" skipped="0" timestamp="2023-03-10T22:59:24" time="13.772" tests="2">
-    <testcase classname=" use jsdom in this test file" name=" use jsdom in this test file" time="0.008">
-    </testcase>
-    <testcase classname="CreateNewPosting component cancel button works" name="CreateNewPosting component cancel button works" time="0.49">
+    <testcase classname="CreateNewPosting component cancel button works" name="CreateNewPosting component cancel button works" time="0.571">
       <failure>TypeError: Cannot destructure property &apos;user&apos; of &apos;(0 , _UserAuthContext.useUserAuth)(...)&apos; as it is undefined.
     at CreateNewPosting (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\Jobs\CreateNewPosting.js:26:13)
     at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
@@ -299,12 +423,476 @@
     at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
     </testcase>
   </testsuite>
-  <testsuite name="undefined" errors="0" failures="1" skipped="0" timestamp="2023-03-10T22:59:35" time="3.467" tests="2">
-    <testcase classname=" use jsdom in this test file" name=" use jsdom in this test file" time="0.009">
+  <testsuite name="JobPostings" errors="0" failures="1" skipped="0" timestamp="2023-03-11T07:06:55" time="15.817" tests="2">
+    <testcase classname="JobPostings renders a list of job postings" name="JobPostings renders a list of job postings" time="0.003">
+      <failure>Error: Cannot spy the fetch property because it is not a function; undefined given instead
+    at ModuleMocker.spyOn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-mock\build\index.js:798:15)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\Jobs\JobPostings.test.js:13:10)
+    at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:66:9)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:60:9)</failure>
     </testcase>
-    <testcase classname="Feed should render post data" name="Feed should render post data" time="0.255">
-      <failure>ReferenceError: React is not defined
-    at Feed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\UserFeedPage\Feed.js:38:3)
+    <testcase classname="JobPostings redirects to the CreateNewPosting page when the &quot;Create a New Job Posting&quot; button is clicked" name="JobPostings redirects to the CreateNewPosting page when the &quot;Create a New Job Posting&quot; button is clicked" time="1.191">
+    </testcase>
+  </testsuite>
+  <testsuite name="CreateEvent" errors="0" failures="3" skipped="0" timestamp="2023-03-11T07:07:09" time="6.596" tests="3">
+    <testcase classname="CreateEvent renders the input fields and submit button" name="CreateEvent renders the input fields and submit button" time="0.489">
+      <failure>TypeError: Cannot destructure property &apos;user&apos; of &apos;(0 , _UserAuthContext.useUserAuth)(...)&apos; as it is undefined.
+    at CreateEvent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\Network\CreateEvent.js:21:11)
+    at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
+    at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
+    at beginWork$1 (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:27426:14)
+    at performUnitOfWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+    at workLoopSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+    at renderRootSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25750:22)
+    at flushActQueue (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2667:24)
+    at act (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2582:11)
+    at C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\act-compat.js:63:25
+    at renderRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:159:26)
+    at render (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:246:10)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\Network\CreateEvent.test.js:7:11)
+    at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:66:9)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:60:9)
+    at run (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:475:34)
+    at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="CreateEvent updates state when input fields are changed" name="CreateEvent updates state when input fields are changed" time="0.045">
+      <failure>TypeError: Cannot destructure property &apos;user&apos; of &apos;(0 , _UserAuthContext.useUserAuth)(...)&apos; as it is undefined.
+    at CreateEvent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\Network\CreateEvent.js:21:11)
+    at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
+    at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
+    at beginWork$1 (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:27426:14)
+    at performUnitOfWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+    at workLoopSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+    at renderRootSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25750:22)
+    at flushActQueue (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2667:24)
+    at act (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2582:11)
+    at C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\act-compat.js:63:25
+    at renderRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:159:26)
+    at render (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:246:10)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\Network\CreateEvent.test.js:23:11)
+    at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:66:9)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:60:9)
+    at run (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:475:34)
+    at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="CreateEvent submits the form with correct data when submit button is clicked" name="CreateEvent submits the form with correct data when submit button is clicked" time="0.058">
+      <failure>TypeError: Cannot destructure property &apos;user&apos; of &apos;(0 , _UserAuthContext.useUserAuth)(...)&apos; as it is undefined.
+    at CreateEvent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\Network\CreateEvent.js:21:11)
+    at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
+    at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
+    at beginWork$1 (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:27426:14)
+    at performUnitOfWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+    at workLoopSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+    at renderRootSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25750:22)
+    at flushActQueue (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2667:24)
+    at act (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2582:11)
+    at C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\act-compat.js:63:25
+    at renderRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:159:26)
+    at render (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:246:10)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\Network\CreateEvent.test.js:43:11)
+    at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:66:9)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:60:9)
+    at run (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:475:34)
+    at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="ProfileForm component" errors="0" failures="2" skipped="0" timestamp="2023-03-11T07:07:09" time="7.564" tests="2">
+    <testcase classname="ProfileForm component renders form fields" name="ProfileForm component renders form fields" time="0.581">
+      <failure>TypeError: Cannot destructure property &apos;user&apos; of &apos;(0 , _UserAuthContext.useUserAuth)(...)&apos; as it is undefined.
+    at ProfileForm (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\ProfileInfo\ProfileForm.js:8:10)
+    at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
+    at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
+    at beginWork$1 (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:27426:14)
+    at performUnitOfWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+    at workLoopSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+    at renderRootSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25750:22)
+    at flushActQueue (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2667:24)
+    at act (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2582:11)
+    at C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\act-compat.js:63:25
+    at renderRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:159:26)
+    at render (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:246:10)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\ProfileInfo\ProfileForm.test.js:7:11)
+    at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:66:9)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:60:9)
+    at run (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:475:34)
+    at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="ProfileForm component allows users to enter information" name="ProfileForm component allows users to enter information" time="0.046">
+      <failure>TypeError: Cannot destructure property &apos;user&apos; of &apos;(0 , _UserAuthContext.useUserAuth)(...)&apos; as it is undefined.
+    at ProfileForm (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\ProfileInfo\ProfileForm.js:8:10)
+    at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
+    at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
+    at beginWork$1 (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:27426:14)
+    at performUnitOfWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+    at workLoopSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+    at renderRootSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25750:22)
+    at flushActQueue (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2667:24)
+    at act (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2582:11)
+    at C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\act-compat.js:63:25
+    at renderRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:159:26)
+    at render (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:246:10)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\ProfileInfo\ProfileForm.test.js:21:11)
+    at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:66:9)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:60:9)
+    at run (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:475:34)
+    at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="1" skipped="0" timestamp="2023-03-11T07:07:10" time="6.488" tests="2">
+    <testcase classname=" use jsdom in this test file" name=" use jsdom in this test file" time="0.005">
+    </testcase>
+    <testcase classname="ConnectionPage displays user connections and deletes connection on click" name="ConnectionPage displays user connections and deletes connection on click" time="0.333">
+      <failure>TypeError: Cannot read properties of null (reading &apos;uid&apos;)
+    at ConnectionPage (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\connection\ConnectionPage.js:10:39)
+    at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
+    at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
+    at beginWork$1 (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:27426:14)
+    at performUnitOfWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+    at workLoopSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+    at renderRootSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25750:22)
+    at flushActQueue (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2667:24)
+    at act (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2582:11)
+    at C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\act-compat.js:63:25
+    at renderRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:159:26)
+    at render (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:246:10)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\connection\ConnectionPage.test.js:56:11)
+    at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:66:9)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:60:9)
+    at run (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:475:34)
+    at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="3" skipped="0" timestamp="2023-03-11T07:07:11" time="5.706" tests="4">
+    <testcase classname=" use jsdom in this test file" name=" use jsdom in this test file" time="0.011">
+    </testcase>
+    <testcase classname=" renders OtherUsersProfile without errors" name=" renders OtherUsersProfile without errors" time="0.346">
+      <failure>TypeError: Cannot read properties of null (reading &apos;uid&apos;)
+    at OtherUsersProfile (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\ProfileInfo\OtherUsersProfile.js:28:35)
+    at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
+    at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
+    at beginWork$1 (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:27426:14)
+    at performUnitOfWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+    at workLoopSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+    at renderRootSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25750:22)
+    at flushActQueue (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2667:24)
+    at act (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2582:11)
+    at C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\act-compat.js:63:25
+    at renderRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:159:26)
+    at render (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:246:10)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\ProfileInfo\OtherUsersProfile.test.js:15:9)
+    at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:66:9)
+    at run (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:475:34)
+    at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="OtherUsersProfile renders user information" name="OtherUsersProfile renders user information" time="0.001">
+      <failure>Error: Cannot spy the fetch property because it is not a function; undefined given instead
+    at ModuleMocker.spyOn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-mock\build\index.js:798:15)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\ProfileInfo\OtherUsersProfile.test.js:35:12)
+    at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:66:9)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:60:9)</failure>
+    </testcase>
+    <testcase classname="OtherUsersProfile renders error message when user information not found" name="OtherUsersProfile renders error message when user information not found" time="0.001">
+      <failure>Error: Cannot spy the fetch property because it is not a function; undefined given instead
+    at ModuleMocker.spyOn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-mock\build\index.js:798:15)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\ProfileInfo\OtherUsersProfile.test.js:49:12)
+    at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:66:9)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:60:9)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="1" skipped="0" timestamp="2023-03-11T07:07:11" time="6.382" tests="2">
+    <testcase classname=" use jsdom in this test file" name=" use jsdom in this test file" time="0.024">
+    </testcase>
+    <testcase classname="Profile component renders profile information" name="Profile component renders profile information" time="0.339">
+      <failure>ReferenceError: Row is not defined
+    at Profile (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\ProfileInfo\Profile.js:45:5)
+    at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
+    at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
+    at beginWork$1 (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:27426:14)
+    at performUnitOfWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+    at workLoopSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+    at renderRootSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25750:22)
+    at flushActQueue (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2667:24)
+    at act (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2582:11)
+    at C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\act-compat.js:63:25
+    at renderRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:159:26)
+    at render (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:246:10)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\ProfileInfo\Profile.test.js:48:17)
+    at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:66:9)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:60:9)
+    at run (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:475:34)
+    at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="1" skipped="0" timestamp="2023-03-11T07:07:12" time="6.379" tests="2">
+    <testcase classname=" use jsdom in this test file" name=" use jsdom in this test file" time="0.007">
+    </testcase>
+    <testcase classname="Search should search for users based on input value" name="Search should search for users based on input value" time="1.459">
+      <failure>Error: useNavigate() may be used only in the context of a &lt;Router&gt; component.
+    at Object.invariant (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@remix-run\router\history.ts:480:11)
+    at useNavigate (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-router\lib\hooks.tsx:159:3)
+    at Search (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\connection\Search.js:22:32)
+    at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
+    at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
+    at beginWork$1 (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:27426:14)
+    at performUnitOfWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+    at workLoopSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+    at renderRootSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25750:22)
+    at flushActQueue (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2667:24)
+    at act (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2582:11)
+    at C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\act-compat.js:63:25
+    at renderRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:159:26)
+    at render (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:246:10)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\connection\Search.test.js:31:60)
+    at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:66:9)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:60:9)
+    at run (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:475:34)
+    at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="3" skipped="0" timestamp="2023-03-11T07:07:12" time="6.169" tests="4">
+    <testcase classname=" use jsdom in this test file" name=" use jsdom in this test file" time="0.008">
+    </testcase>
+    <testcase classname="PendingRequests renders the manage invitations title" name="PendingRequests renders the manage invitations title" time="0.495">
+      <failure>ReferenceError: Row is not defined
+    at PendingRequests (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\Network\PendingRequests.js:13:10)
+    at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
+    at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
+    at beginWork$1 (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:27426:14)
+    at performUnitOfWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+    at workLoopSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+    at renderRootSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25750:22)
+    at flushActQueue (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2667:24)
+    at act (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2582:11)
+    at C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\act-compat.js:63:25
+    at renderRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:159:26)
+    at render (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:246:10)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\Network\PendingRequests.test.js:16:13)
+    at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:66:9)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:60:9)
+    at run (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:475:34)
+    at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="PendingRequests renders the backward arrow image" name="PendingRequests renders the backward arrow image" time="0.032">
+      <failure>ReferenceError: Row is not defined
+    at PendingRequests (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\Network\PendingRequests.js:13:10)
+    at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
+    at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
+    at beginWork$1 (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:27426:14)
+    at performUnitOfWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+    at workLoopSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+    at renderRootSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25750:22)
+    at flushActQueue (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2667:24)
+    at act (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2582:11)
+    at C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\act-compat.js:63:25
+    at renderRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:159:26)
+    at render (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:246:10)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\Network\PendingRequests.test.js:22:13)
+    at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:66:9)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:60:9)
+    at run (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:475:34)
+    at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="PendingRequests renders the container with the correct class name" name="PendingRequests renders the container with the correct class name" time="0.027">
+      <failure>ReferenceError: Row is not defined
+    at PendingRequests (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\Network\PendingRequests.js:13:10)
+    at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
+    at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
+    at beginWork$1 (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:27426:14)
+    at performUnitOfWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+    at workLoopSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+    at renderRootSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25750:22)
+    at flushActQueue (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2667:24)
+    at act (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2582:11)
+    at C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\act-compat.js:63:25
+    at renderRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:159:26)
+    at render (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:246:10)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\Network\PendingRequests.test.js:28:13)
+    at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:66:9)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:60:9)
+    at run (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:475:34)
+    at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="1" skipped="0" timestamp="2023-03-11T07:07:18" time="3.742" tests="2">
+    <testcase classname=" use jsdom in this test file" name=" use jsdom in this test file" time="0.007">
+    </testcase>
+    <testcase classname="Feed should render post data" name="Feed should render post data" time="0.274">
+      <failure>ReferenceError: profile1 is not defined
+    at Feed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\UserFeedPage\Feed.js:57:16)
     at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
     at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
     at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
@@ -336,11 +924,25 @@
     at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
     </testcase>
   </testsuite>
-  <testsuite name="JobPostings" errors="0" failures="1" skipped="0" timestamp="2023-03-10T22:59:24" time="15.452" tests="2">
-    <testcase classname="JobPostings renders a list of job postings" name="JobPostings renders a list of job postings" time="0.007">
-      <failure>Error: Cannot spy the fetch property because it is not a function; undefined given instead
-    at ModuleMocker.spyOn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-mock\build\index.js:798:15)
-    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\Jobs\JobPostings.test.js:13:10)
+  <testsuite name="RequestsPage" errors="0" failures="2" skipped="0" timestamp="2023-03-11T07:07:17" time="5.276" tests="2">
+    <testcase classname="RequestsPage renders the title of the page" name="RequestsPage renders the title of the page" time="0.372">
+      <failure>TypeError: Cannot read properties of null (reading &apos;uid&apos;)
+    at RequestsPage (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\connection\RequestsPage.js:22:38)
+    at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
+    at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
+    at beginWork$1 (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:27426:14)
+    at performUnitOfWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+    at workLoopSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+    at renderRootSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25750:22)
+    at flushActQueue (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2667:24)
+    at act (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2582:11)
+    at C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\act-compat.js:63:25
+    at renderRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:159:26)
+    at render (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:246:10)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\connection\RequestsPage.test.js:7:11)
     at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
@@ -348,30 +950,248 @@
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
     at _runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:155:3)
     at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:66:9)
-    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:60:9)</failure>
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:60:9)
+    at run (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:475:34)
+    at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
     </testcase>
-    <testcase classname="JobPostings redirects to the CreateNewPosting page when the &quot;Create a New Job Posting&quot; button is clicked" name="JobPostings redirects to the CreateNewPosting page when the &quot;Create a New Job Posting&quot; button is clicked" time="1.501">
+    <testcase classname="RequestsPage renders a card for each request" name="RequestsPage renders a card for each request" time="0.076">
+      <failure>TypeError: Cannot read properties of null (reading &apos;uid&apos;)
+    at RequestsPage (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\connection\RequestsPage.js:22:38)
+    at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
+    at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
+    at beginWork$1 (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:27426:14)
+    at performUnitOfWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+    at workLoopSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+    at renderRootSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25750:22)
+    at flushActQueue (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2667:24)
+    at act (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2582:11)
+    at C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\act-compat.js:63:25
+    at renderRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:159:26)
+    at render (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:246:10)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\connection\RequestsPage.test.js:21:11)
+    at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:66:9)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:60:9)
+    at run (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:475:34)
+    at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
     </testcase>
   </testsuite>
-  <testsuite name="undefined" errors="0" failures="1" skipped="0" timestamp="2023-03-10T22:59:35" time="4.599" tests="2">
-    <testcase classname=" use jsdom in this test file" name=" use jsdom in this test file" time="0.007">
+  <testsuite name="undefined" errors="0" failures="1" skipped="0" timestamp="2023-03-11T07:07:18" time="4.702" tests="2">
+    <testcase classname=" use jsdom in this test file" name=" use jsdom in this test file" time="0.009">
     </testcase>
-    <testcase classname="LoggedHomePage should render a Feed component" name="LoggedHomePage should render a Feed component" time="0.095">
+    <testcase classname="LoggedHomePage component should render a Feed component" name="LoggedHomePage component should render a Feed component" time="0.215">
+      <failure>ReferenceError: profile1 is not defined
+    at Feed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\UserFeedPage\Feed.js:57:16)
+    at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
+    at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
+    at beginWork$1 (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:27426:14)
+    at performUnitOfWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+    at workLoopSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+    at renderRootSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25750:22)
+    at flushActQueue (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2667:24)
+    at act (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2582:11)
+    at C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\act-compat.js:63:25
+    at renderRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:159:26)
+    at render (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:246:10)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\UserFeedPage\LoggedHomePage.test.js:17:35)
+    at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:66:9)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:60:9)
+    at run (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:475:34)
+    at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="2" skipped="0" timestamp="2023-03-11T07:07:19" time="4.354" tests="3">
+    <testcase classname=" use jsdom in this test file" name=" use jsdom in this test file" time="0.013">
+    </testcase>
+    <testcase classname="CreatPost component should render the form and create a new post" name="CreatPost component should render the form and create a new post" time="0.184">
+      <failure>FirebaseError: Expected first argument to collection() to be a CollectionReference, a DocumentReference or FirebaseFirestore</failure>
+    </testcase>
+    <testcase classname="CreatPost component should redirect to login page if user is not authenticated" name="CreatPost component should redirect to login page if user is not authenticated" time="0.019">
+      <failure>FirebaseError: Expected first argument to collection() to be a CollectionReference, a DocumentReference or FirebaseFirestore</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="5" skipped="0" timestamp="2023-03-11T07:07:18" time="5.646" tests="6">
+    <testcase classname=" use jsdom in this test file" name=" use jsdom in this test file" time="0.008">
+    </testcase>
+    <testcase classname="RequestSent renders a title" name="RequestSent renders a title" time="0.24">
       <failure>TypeError: Cannot read properties of null (reading &apos;uid&apos;)
-    at Feed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\UserFeedPage\Feed.js:18:38)
-    at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:6351:18)
-    at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:9855:13)
-    at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:11312:16)
-    at performUnitOfWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:15811:12)
-    at workLoopSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:15745:5)
-    at renderRootSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:15717:7)
-    at performSyncWorkOnRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:15422:20)
-    at flushSyncCallbacks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:2597:22)
-    at flushSyncCallbacksOnlyInLegacyMode (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:2576:5)
-    at scheduleUpdateOnFiber (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:14910:7)
-    at updateContainer (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:17770:5)
-    at Object.create (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-test-renderer\cjs\react-test-renderer.development.js:18510:3)
-    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\UserFeedPage\LoggedHomePage.test.js:16:34)
+    at RequestSent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\connection\RequestSent.js:22:38)
+    at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
+    at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
+    at beginWork$1 (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:27426:14)
+    at performUnitOfWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+    at workLoopSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+    at renderRootSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25750:22)
+    at flushActQueue (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2667:24)
+    at act (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2582:11)
+    at C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\act-compat.js:63:25
+    at renderRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:159:26)
+    at render (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:246:10)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\connection\RequestSent.test.js:16:13)
+    at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:66:9)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:60:9)
+    at run (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:475:34)
+    at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="RequestSent displays user data" name="RequestSent displays user data" time="0.024">
+      <failure>TypeError: Cannot read properties of null (reading &apos;uid&apos;)
+    at RequestSent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\connection\RequestSent.js:22:38)
+    at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
+    at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
+    at beginWork$1 (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:27426:14)
+    at performUnitOfWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+    at workLoopSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+    at renderRootSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25750:22)
+    at flushActQueue (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2667:24)
+    at act (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2582:11)
+    at C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\act-compat.js:63:25
+    at renderRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:159:26)
+    at render (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:246:10)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\connection\RequestSent.test.js:23:13)
+    at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:66:9)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:60:9)
+    at run (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:475:34)
+    at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="RequestSent handles connect button click" name="RequestSent handles connect button click" time="0.024">
+      <failure>TypeError: Cannot read properties of null (reading &apos;uid&apos;)
+    at RequestSent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\connection\RequestSent.js:22:38)
+    at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
+    at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
+    at beginWork$1 (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:27426:14)
+    at performUnitOfWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+    at workLoopSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+    at renderRootSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25750:22)
+    at flushActQueue (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2667:24)
+    at act (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2582:11)
+    at C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\act-compat.js:63:25
+    at renderRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:159:26)
+    at render (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:246:10)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\connection\RequestSent.test.js:32:13)
+    at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:66:9)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:60:9)
+    at run (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:475:34)
+    at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="RequestSent handles cancel button click" name="RequestSent handles cancel button click" time="0.036">
+      <failure>TypeError: Cannot read properties of null (reading &apos;uid&apos;)
+    at RequestSent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\connection\RequestSent.js:22:38)
+    at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
+    at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
+    at beginWork$1 (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:27426:14)
+    at performUnitOfWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+    at workLoopSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+    at renderRootSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25750:22)
+    at flushActQueue (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2667:24)
+    at act (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2582:11)
+    at C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\act-compat.js:63:25
+    at renderRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:159:26)
+    at render (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:246:10)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\connection\RequestSent.test.js:40:13)
+    at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)
+    at _callCircusTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:155:3)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:66:9)
+    at _runTestsForDescribeBlock (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:60:9)
+    at run (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\run.js:25:3)
+    at runAndTransformResultsToJestFormat (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:170:21)
+    at jestAdapter (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:82:19)
+    at runTestInternal (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:389:16)
+    at runTest (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\runTest.js:475:34)
+    at Object.worker (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-runner\build\testWorker.js:133:12)</failure>
+    </testcase>
+    <testcase classname="RequestSent handles withdraw button click" name="RequestSent handles withdraw button click" time="0.025">
+      <failure>TypeError: Cannot read properties of null (reading &apos;uid&apos;)
+    at RequestSent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\connection\RequestSent.js:22:38)
+    at renderWithHooks (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:16305:18)
+    at mountIndeterminateComponent (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:20074:13)
+    at beginWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:21587:16)
+    at beginWork$1 (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:27426:14)
+    at performUnitOfWork (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26560:12)
+    at workLoopSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26466:5)
+    at renderRootSync (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:26434:7)
+    at recoverFromConcurrentError (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25850:20)
+    at performConcurrentWorkOnRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react-dom\cjs\react-dom.development.js:25750:22)
+    at flushActQueue (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2667:24)
+    at act (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\react\cjs\react.development.js:2582:11)
+    at C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\act-compat.js:63:25
+    at renderRoot (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:159:26)
+    at render (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\@testing-library\react\dist\pure.js:246:10)
+    at Object.&lt;anonymous&gt; (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\src\components\connection\RequestSent.test.js:48:13)
     at Promise.then.completed (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:391:28)
     at new Promise (&lt;anonymous&gt;)
     at callAsyncCircusFn (C:\Users\fatem\OneDrive\Documents\GitHub\SOEN390\frontend\node_modules\jest-circus\build\utils.js:316:10)

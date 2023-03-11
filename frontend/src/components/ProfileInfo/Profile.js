@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { collection, getDoc, doc } from "firebase/firestore";
 import { auth, db } from "../../firebase";
-import Card from "react-bootstrap/Card";
+//import Card from "react-bootstrap/Card";
 import "../../styles/profile.css";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+//import Row from "react-bootstrap/Row";
+//import Col from "react-bootstrap/Col";
 import { GrMailOption, GrPhone } from "react-icons/gr";
 import EditProfile from "./EditProfile";
-import person from "./test.gif";
+//import person from "./test.gif";
 import { getStorage, ref } from "firebase/storage";
 
 /**

@@ -11,9 +11,9 @@ import {
   updateDoc,
 } from "firebase/firestore";
 import { useEffect, useState } from "react";
-import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
-import backward from ".././../images/backward.png";
-import "../../styles/network.css";
+//import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
+//import backward from ".././../images/backward.png";
+//import "../../styles/network.css";
 import { Link, useNavigate } from "react-router-dom";
 function RequestSent() {
   const [Users, SetUsers] = useState([]);
@@ -60,6 +60,8 @@ function RequestSent() {
         });
     });
   }, [Users]);
+
+  /** 
 
   function handleConnect(userId) {
     const connectionRef = collection(db, "connection");
@@ -108,8 +110,8 @@ function RequestSent() {
       }
     });
     SetUserData(UserData.filter((element) => element.id !== userId));
-  }
-
+  } */
+ /** 
   function handleCancel(userId) {
     getDoc(doc(dbRef, userId)).then((document) => {
       if (document.exists()) {
@@ -122,7 +124,7 @@ function RequestSent() {
       }
     });
     SetUserData(UserData.filter((element) => element.id !== userId));
-  }
+  }*/
   useEffect(() => {
     getDoc(doc(dbRef, currentId)).then((user) => {
       const ReqArray = user.data().requests;

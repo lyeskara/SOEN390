@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useUserAuth } from "../../context/UserAuthContext.js";
 import { auth } from "../../firebase.js";
-import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
-import backward from ".././../images/backward.png";
+//import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
+//import backward from ".././../images/backward.png";
 import "../../styles/network.css";
 
 function PendingRequests() {

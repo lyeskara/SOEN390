@@ -8,13 +8,13 @@ test('use jsdom in this test file', () => {
   });
 
   import React from 'react';
-  import renderer from 'react-test-renderer';
-  import LoggedHomePage from './LoggedHomePage';
-  
-  describe('LoggedHomePage', () => {
-    it('should render a Feed component', () => {
-      const component = renderer.create(<LoggedHomePage />);
-      const tree = component.toJSON();
-      expect(tree).toMatchSnapshot();
-    });
+import { render } from '@testing-library/react';
+import LoggedHomePage from './LoggedHomePage';
+import Feed from './Feed';
+
+describe('LoggedHomePage component', () => {
+  it('should render a Feed component', () => {
+    const { getByTestId } = render(<LoggedHomePage />);
+    expect(getByTestId('feed')).toBeInTheDocument();
   });
+});

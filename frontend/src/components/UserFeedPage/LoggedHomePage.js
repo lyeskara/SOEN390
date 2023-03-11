@@ -4,7 +4,7 @@ import Feed from './Feed'
 function LoggedHomePage() {
   return (
     <div>
-      <Feed/>
+       <Feed data-testid="feed" />
     </div>
   )
 }
